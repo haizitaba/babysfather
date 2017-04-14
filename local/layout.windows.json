@@ -99,25 +99,12 @@
         "node-library",
         "timeline"
       ]
-    },
-    "window-1492176008150": {
-      "main": false,
-      "url": "packages://code-editor/panel/index.html",
-      "windowType": "simple",
-      "x": 254,
-      "y": 194,
-      "width": 808,
-      "height": 627,
-      "layout": null,
-      "panels": [
-        "code-editor"
-      ]
     }
   },
   "panels": {
     "code-editor": {
-      "x": 254,
-      "y": 194,
+      "x": 788,
+      "y": 271,
       "width": 808,
       "height": 627
     }

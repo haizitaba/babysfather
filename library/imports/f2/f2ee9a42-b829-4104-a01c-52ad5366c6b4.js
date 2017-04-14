@@ -20,7 +20,7 @@ cc.Class({
     onLoad: function onLoad() {
         var clickEventHandler = new cc.Component.EventHandler();
         clickEventHandler.target = this.node; //这个 node 节点是你的事件处理代码组件所属的节点
-        clickEventHandler.component = "MyComponent"; //这个是代码文件名
+        clickEventHandler.component = "setProperty"; //这个是代码文件名
         clickEventHandler.handler = "callback";
         clickEventHandler.customEventData = "foobar";
 
@@ -33,6 +33,13 @@ cc.Class({
         var node = event.target;
         var button = node.getComponent(cc.Button);
         //这里的 customEventData 参数就等于你之前设置的 "foobar"
+        userData = {
+            name: 'Tracer',
+            level: 1,
+            gold: 100
+        };
+
+        cc.sys.localStorage.setItem('userData', JSON.stringify(userData));
     }
 
     // called every frame, uncomment this function to activate update callback
