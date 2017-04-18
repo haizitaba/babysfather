@@ -1,0 +1,30 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "setProperty",
+    "userData",
+    "name",
+    "level",
+    "gold",
+    "sys",
+    "localStorage",
+    "setItem",
+    "JSON",
+    "stringify",
+    "console",
+    "log"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACR;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AAVQ,KAHP;;AAgBL;AACAC,iBAAa,uBAAU;AACpB,YAAIC,WAAW;AAClBC,kBAAM,QADY;AAElBC,mBAAO,CAFW;AAGlBC,kBAAM;AAHY,SAAf;;AAMPT,WAAGU,GAAH,CAAOC,YAAP,CAAoBC,OAApB,CAA4B,UAA5B,EAAwCC,KAAKC,SAAL,CAAeR,QAAf,CAAxC;AACAS,gBAAQC,GAAR,CAAY,MAAZ;AACK;;AAED;AACA;;AAEA;AA/BK,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        // foo: {\r\n        //    default: null,      // The default value will be used only when the component attaching\r\n        //                           to a node for the first time\r\n        //    url: cc.Texture2D,  // optional, default is typeof default\r\n        //    serializable: true, // optional, default is true\r\n        //    visible: true,      // optional, default is true\r\n        //    displayName: 'Foo', // optional\r\n        //    readonly: false,    // optional, default is false\r\n        // },\r\n        // ...\r\n    },\r\n\r\n    // use this for initialization\r\n    setProperty: function(){\r\n       var userData = {\r\n    name: 'Tracer',\r\n    level: 1,\r\n    gold: 100\r\n};\r\n\r\ncc.sys.localStorage.setItem('userData', JSON.stringify(userData));\r\nconsole.log(\"按钮按下\")\r\n    }\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n});\r\n"
+  ]
+}
