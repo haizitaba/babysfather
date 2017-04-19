@@ -14,17 +14,37 @@
     "name",
     "level",
     "gold",
+    "baidu_developer",
+    "rate",
+    "salary",
     "sys",
     "localStorage",
     "setItem",
     "JSON",
     "stringify",
     "console",
-    "log"
+    "log",
+    "rnd",
+    "min",
+    "max",
+    "parseInt",
+    "Math",
+    "random",
+    "contains",
+    "a",
+    "obj",
+    "i",
+    "length",
+    "jobhunting",
+    "job",
+    "arr",
+    "rand",
+    "push",
+    "j"
   ],
-  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACR;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AAVQ,KAHP;;AAgBL;AACAC,iBAAa,uBAAU;AACpB,YAAIC,WAAW;AAClBC,kBAAM,QADY;AAElBC,mBAAO,CAFW;AAGlBC,kBAAM;AAHY,SAAf;;AAMPT,WAAGU,GAAH,CAAOC,YAAP,CAAoBC,OAApB,CAA4B,UAA5B,EAAwCC,KAAKC,SAAL,CAAeR,QAAf,CAAxC;AACAS,gBAAQC,GAAR,CAAY,MAAZ;AACK;;AAED;AACA;;AAEA;AA/BK,CAAT",
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACR;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AAVQ,KAHP;;AAgBL;AACAC,iBAAa,uBAAU;AACxB,YAAIC,WAAW;AACVC,kBAAM,QADI;AAEVC,mBAAO,CAFG;AAGVC,kBAAM;AAHI,SAAf;;AAMC,YAAIC,kBAAkB;AAClBH,kBAAM,QADY;AAElBI,kBAAM,CAFY;AAGlBC,oBAAQ;AAHU,SAAtB;;AAMAZ,WAAGa,GAAH,CAAOC,YAAP,CAAoBC,OAApB,CAA4B,UAA5B,EAAwCC,KAAKC,SAAL,CAAeX,QAAf,CAAxC;AACAY,gBAAQC,GAAR,CAAY,MAAZ;AACC,KAhCI;;AAkCL;AACAC,SAAK,aAASC,GAAT,EAAaC,GAAb,EAAiB;AAClB,eAAOC,SAASC,KAAKC,MAAL,MAAeH,MAAMD,GAAN,GAAY,CAA3B,IAAgCA,GAAzC,CAAP;AACH,KArCI;;AAuCLK,cAAS,kBAASC,CAAT,EAAWC,GAAX,EAAe;AACpB,aAAK,IAAIC,IAAI,CAAb,EAAgBA,IAAIF,EAAEG,MAAtB,EAA8BD,GAA9B,EAAmC;AAC/B,gBAAIF,EAAEE,CAAF,KAAQD,GAAZ,EAAiB;AACb,uBAAO,IAAP;AACH;AACJ;AACD,eAAO,KAAP;AACH,KA9CI;;AAgDLG,gBAAY,sBAAU;AAClB,YAAIC,MAAM,CAAC,iBAAD,EAAmB,mBAAnB,EAAuC,eAAvC,EAAuD,kBAAvD,EAA0E,kBAA1E,CAAV;AACA,YAAIC,MAAM,EAAV;AACA,eAAMA,IAAIH,MAAJ,GAAa,CAAnB,EAAqB;AACjB,gBAAII,OAAO,KAAKd,GAAL,CAAS,CAAT,EAAWY,IAAIF,MAAf,CAAX;AACA,gBAAG,KAAKJ,QAAL,CAAcO,GAAd,EAAmBC,IAAnB,CAAH,EAA4B,CAE3B,CAFD,MAEK;AACDD,oBAAIE,IAAJ,CAASD,IAAT;AACH;AACJ;AACD,aAAI,IAAIE,IAAE,CAAV,EAAYA,IAAEH,IAAIH,MAAlB,EAAyBM,GAAzB,EACA;AACI,gBAAIP,IAAIO,IAAE,CAAV;AACAlB,oBAAQC,GAAR,CAAYa,IAAIH,CAAJ,CAAZ;AACH;AAEJ;;AAED;AACA;;AAEA;AAtEK,CAAT",
   "file": "unknown",
   "sourcesContent": [
-    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        // foo: {\r\n        //    default: null,      // The default value will be used only when the component attaching\r\n        //                           to a node for the first time\r\n        //    url: cc.Texture2D,  // optional, default is typeof default\r\n        //    serializable: true, // optional, default is true\r\n        //    visible: true,      // optional, default is true\r\n        //    displayName: 'Foo', // optional\r\n        //    readonly: false,    // optional, default is false\r\n        // },\r\n        // ...\r\n    },\r\n\r\n    // use this for initialization\r\n    setProperty: function(){\r\n       var userData = {\r\n    name: 'Tracer',\r\n    level: 1,\r\n    gold: 100\r\n};\r\n\r\ncc.sys.localStorage.setItem('userData', JSON.stringify(userData));\r\nconsole.log(\"按钮按下\")\r\n    }\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n});\r\n"
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        // foo: {\r\n        //    default: null,      // The default value will be used only when the component attaching\r\n        //                           to a node for the first time\r\n        //    url: cc.Texture2D,  // optional, default is typeof default\r\n        //    serializable: true, // optional, default is true\r\n        //    visible: true,      // optional, default is true\r\n        //    displayName: 'Foo', // optional\r\n        //    readonly: false,    // optional, default is false\r\n        // },\r\n        // ...\r\n    },\r\n\r\n    // use this for initialization\r\n    setProperty: function(){\r\n   var userData = {\r\n        name: 'Tracer',\r\n        level: 1,\r\n        gold: 100\r\n    };\r\n    \r\n    var baidu_developer = {\r\n        name: 'Tracer',\r\n        rate: 2,\r\n        salary: 10000\r\n    };\r\n\r\n    cc.sys.localStorage.setItem('userData', JSON.stringify(userData));\r\n    console.log(\"按钮按下\");\r\n    },\r\n\r\n    // function rnd(min, max) {     return parseInt(Math.random()*(max - min + 1) + min);   } \r\n    rnd: function(min,max){\r\n        return parseInt(Math.random()*(max - min + 1) + min);\r\n    },\r\n    \r\n    contains:function(a,obj){\r\n        for (var i = 0; i < a.length; i++) {\r\n            if (a[i] == obj) {\r\n                return true;\r\n            }\r\n        }\r\n        return false;\r\n    },\r\n    \r\n    jobhunting: function(){\r\n        var job = [\"baidu_developer\",\"fenghua_developer\",\"ali_developer\",\"tenant_developer\",\"gongfu_developer\"];\r\n        var arr = [];\r\n        while(arr.length < 3){\r\n            var rand = this.rnd(0,job.length);\r\n            if(this.contains(arr, rand)){\r\n                \r\n            }else{\r\n                arr.push(rand);\r\n            }\r\n        }\r\n        for(var j=0;j<arr.length;j++) \r\n        {\r\n            var i = j+1\r\n            console.log(job[i]);\r\n        } \r\n        \r\n    }\r\n\r\n    // called every frame, uncomment this function to activate update callback\r\n    // update: function (dt) {\r\n\r\n    // },\r\n});\r\n"
   ]
 }
