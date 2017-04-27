@@ -21,7 +21,23 @@ cc.Class({
         var userData = {
             name: 'Tracer',
             level: 1,
-            gold: 100
+            gold: 100,
+            physicalStrength: 100,
+            mood: 100,
+            logic: 100,
+            language: 100,
+            team: 100,
+            work: 'wu',
+            story: 1,
+            car: 'wu',
+            house: 'wu',
+            stroy1: 1,
+            stroy2: 1,
+            certificate: {
+                work1: 'work1',
+                work2: 'work2',
+                work3: 'work3'
+            }
         };
 
         var baidu_developer = {
@@ -61,6 +77,13 @@ cc.Class({
             var i = j + 1;
             console.log(job[i]);
         }
+    },
+
+    selectJob: function selectJob() {
+        var userData = JSON.parse(cc.sys.localStorage.getItem('userData'));
+        var selectjob = false;
+        console.log('userdata:' + userData.name);
+        return selectjob;
     }
 
     // called every frame, uncomment this function to activate update callback

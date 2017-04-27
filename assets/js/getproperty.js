@@ -17,7 +17,9 @@ cc.Class({
     // use this for initialization
     getProperty: function(){
        var userData = JSON.parse(cc.sys.localStorage.getItem('userData'));
-       console.log('userdata:'+userData.name)
+       console.log('userdata:'+userData.certificate.work1)
+       console.log('userdata:'+userData.certificate.work2)
+       console.log('userdata:'+userData.certificate.work3)
        console.log("按钮按下")
     }
 

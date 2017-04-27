@@ -2725,7 +2725,7 @@
       "__id__": 70
     },
     "component": "buttonproperty",
-    "handler": "jobhunting",
+    "handler": "setProperty",
     "customEventData": ""
   },
   {

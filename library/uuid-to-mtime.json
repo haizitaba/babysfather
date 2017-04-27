@@ -285,8 +285,8 @@
     "relativePath": "since\\gongzuoshi.fire"
   },
   "f5844f77-b284-42fa-9ea6-9f3649df52b5": {
-    "asset": 1492606149243,
-    "meta": 1492606149252,
+    "asset": 1493278655629,
+    "meta": 1493278655637,
     "relativePath": "since\\home.fire"
   },
   "a829e919-f8bb-405c-9bda-45044f543a23": {
@@ -310,13 +310,13 @@
     "relativePath": "clip"
   },
   "c85b0aa0-90c5-46d6-a32e-bf6b3a31f35d": {
-    "asset": 1492605870635,
-    "meta": 1492605870719,
+    "asset": 1493279479827,
+    "meta": 1493279479912,
     "relativePath": "js\\buttonproperty.js"
   },
   "c2cd1798-102f-4a41-af6d-437d6f3c90eb": {
-    "asset": 1492520662620,
-    "meta": 1492520662691,
+    "asset": 1493279656805,
+    "meta": 1493279656891,
     "relativePath": "js\\getproperty.js"
   }
 }
