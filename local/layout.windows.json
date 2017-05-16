@@ -18,7 +18,7 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 382,
+                "height": 384,
                 "type": "panel",
                 "width": 229
               },
@@ -27,12 +27,12 @@
                 "children": [
                   "assets"
                 ],
-                "height": 382,
+                "height": 384,
                 "type": "panel",
                 "width": 229
               }
             ],
-            "height": 767,
+            "height": 771,
             "type": "dock-v",
             "width": 229
           },
@@ -45,7 +45,7 @@
                     "children": [
                       "scene"
                     ],
-                    "height": 383,
+                    "height": 385,
                     "type": "panel",
                     "width": 625.984375
                   },
@@ -54,12 +54,12 @@
                     "children": [
                       "node-library"
                     ],
-                    "height": 383,
+                    "height": 385,
                     "type": "panel",
                     "width": 204
                   }
                 ],
-                "height": 383,
+                "height": 385,
                 "type": "dock-h",
                 "width": 833
               },
@@ -69,12 +69,12 @@
                   "console",
                   "timeline"
                 ],
-                "height": 381,
+                "height": 383,
                 "type": "panel",
                 "width": 833
               }
             ],
-            "height": 767,
+            "height": 771,
             "type": "dock-v",
             "width": 833
           },
@@ -83,7 +83,7 @@
             "children": [
               "inspector"
             ],
-            "height": 767,
+            "height": 771,
             "type": "panel",
             "width": 350
           }
@@ -103,8 +103,8 @@
   },
   "panels": {
     "code-editor": {
-      "x": 365,
-      "y": 42,
+      "x": 379,
+      "y": 25,
       "width": 808,
       "height": 627
     }
