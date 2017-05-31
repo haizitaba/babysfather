@@ -69,16 +69,29 @@ cc.Class({
         var company2 = ['jd', 'neteasy', 'ctrip', 'suning', 'sohu', 'sina', 'leshi', 'didi', 'juren', 'xiaomi']; //ctripxiecheng携程
         var company3 = ['eastmoney', '360', 'weipinhui', 'meituan', 'youku', 'kingsoft', 'shengda', 'xunlei', 'baofeng', 'dangdang', 'guomei', 'wanmei', 'soufang', 'lianjia', 'xindongfang', 'jumei', 'qichezhijia', 'quna', 'shijihulian', 'jinritoutiao'];
         var job = ["baidu_developer", "fenghua_developer", "ali_developer", "tenant_developer", "gongfu_developer"];
-        var arr = [];
-        while (arr.length < 3) {
-            var rand = this.rnd(0, job.length);
-            if (this.contains(arr, rand)) {} else {
-                arr.push(rand);
+        var job_jishu = ['qiantaisheji', 'meishusheji', 'houtaisheji', 'wangluoguanli', 'chanpinzhuli', 'chanpinjingli', 'jishuzongjian'];
+        var job_renli = ['renshizhuanyuan', 'renshizhuli', 'xingzhengzhuli', 'xingzhengzhuanyuan', 'renshijingli', 'xingzhengjingli', 'renliziyuanzongjian'];
+        var job_xiaoshou = ['xiaoshoudaibiao', 'shichangdiaocha', 'xiaoshouguwen', 'xiaoshouzhuli'];
+        var arr_job = [];
+        var arr_zhiwei = [];
+        var job_company = company1.concat(company2).concat(company3);
+        var job_zhiwei = job_jishu.concat(job_renli).concat(job_xiaoshou);
+        while (arr_job.length < 3) {
+            var rand = this.rnd(0, job_company.length);
+            var r = job_company[rand];
+            if (this.contains(arr_job, r)) {} else {
+                arr_job.push(r);
             }
         }
-        for (var j = 0; j < arr.length; j++) {
-            var i = j + 1;
-            console.log(job[i]);
+        while (arr_zhiwei.length < 3) {
+            var rand_zhiwei = this.rnd(0, job_zhiwei.length);
+            var r_zhiwei = job_zhiwei[rand_zhiwei];
+            if (this.contains(arr_zhiwei, r_zhiwei)) {} else {
+                arr_zhiwei.push(r_zhiwei);
+            }
+        }
+        for (var j = 0; j < 3; j++) {
+            console.log(arr_job[j] + '_' + arr_zhiwei[j]);
         }
     },
 
