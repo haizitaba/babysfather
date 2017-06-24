@@ -12,18 +12,10 @@ cc.Class({
         //    readonly: false,    // optional, default is false
         // },
         // ...
-    
-    },
-    
-    onLoad: function () {
-        window.Global = {
-        jobselect: null,
-    };
     },
 
     // use this for initialization
-    
-     setProperty: function(){
+    setProperty: function(){
    var userData = {
         name: 'Tracer',
         level: 1,
@@ -84,7 +76,6 @@ cc.Class({
         var arr_zhiwei = [];
         var job_company = company1.concat(company2).concat(company3);
         var job_zhiwei = job_jishu.concat(job_renli).concat(job_xiaoshou);
-        Global.jobselect = [];
         while(arr_job.length < 3){
             var rand = this.rnd(0,job_company.length);
             var r = job_company[rand];
@@ -94,12 +85,6 @@ cc.Class({
                 arr_job.push(r);
             }
         }
-        
-        // for(var g=0;g<3;g++) 
-        // {
-        //     console.log('arr_job:'+arr_job[g]);
-        // }
-        
         while(arr_zhiwei.length < 3){
             var rand_zhiwei = this.rnd(0,job_zhiwei.length);
             var r_zhiwei = job_zhiwei[rand_zhiwei];
@@ -109,18 +94,9 @@ cc.Class({
                 arr_zhiwei.push(r_zhiwei);
             }
         }
-        
-        // for(var h=0;h<3;h++) 
-        // {
-        //     console.log('arr_zhiwei:'+arr_zhiwei[h]);
-        // }
-        
         for(var j=0;j<3;j++) 
         {
-            
-            Global.jobselect.push(arr_job[j]+'_'+arr_zhiwei[j]);
-            // console.log(Global.jobselect[j]);
-            // console.log(Global.jobselect.length);
+            console.log(arr_job[j]+'_'+arr_zhiwei[j]);
         } 
         
     },
@@ -130,11 +106,6 @@ cc.Class({
         var selectjob = false;
         console.log('userdata:'+userData.name)
         return selectjob;
-    },
-    
-    toScene: function(){
-        this.jobhunting();
-       cc.director.loadScene("yingpin");
     }
 
     // called every frame, uncomment this function to activate update callback
