@@ -1,9 +1,11 @@
 "use strict";
-cc._RFpush(module, 'f54a7wPrwNFHIuMCF0MwofQ', 'tomain');
-// js\tomain.js
+cc._RF.push(module, 'f54a7wPrwNFHIuMCF0MwofQ', 'tomain');
+// js/tomain.js
+
+"use strict";
 
 cc.Class({
-    "extends": cc.Component,
+    extends: cc.Component,
 
     properties: {
         // foo: {
@@ -29,4 +31,4 @@ cc.Class({
     // },
 });
 
-cc._RFpop();
+cc._RF.pop();

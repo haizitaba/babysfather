@@ -1,5 +1,11 @@
+"use strict";
+cc._RF.push(module, '71ad5rKCpdLtqiUdrz1fu5o', 'togongzuoshi');
+// js/togongzuoshi.js
+
+"use strict";
+
 cc.Class({
-    "extends": cc.Component,
+    extends: cc.Component,
 
     properties: {
         // foo: {
@@ -24,3 +30,5 @@ cc.Class({
 
     // },
 });
+
+cc._RF.pop();

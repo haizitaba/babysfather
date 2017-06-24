@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 98,
-      "y": 232,
-      "width": 1432,
-      "height": 887,
+      "x": 212,
+      "y": 138,
+      "width": 1429,
+      "height": 888,
       "layout": {
         "children": [
           {

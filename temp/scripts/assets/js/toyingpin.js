@@ -1,4 +1,8 @@
-'use strict';
+"use strict";
+cc._RF.push(module, '17911aAeQ9PHJfhimsbYz/1', 'toyingpin');
+// js/toyingpin.js
+
+"use strict";
 
 cc.Class({
     extends: cc.Component,
@@ -17,12 +21,8 @@ cc.Class({
     },
 
     // use this for initialization
-    getProperty: function getProperty() {
-        var userData = JSON.parse(cc.sys.localStorage.getItem('userData'));
-        console.log('userdata:' + userData.certificate.work1);
-        console.log('userdata:' + userData.certificate.work2);
-        console.log('userdata:' + userData.certificate.work3);
-        console.log("按钮按下");
+    toScene: function toScene() {
+        cc.director.loadScene("yingpin");
     }
 
     // called every frame, uncomment this function to activate update callback
@@ -30,3 +30,5 @@ cc.Class({
 
     // },
 });
+
+cc._RF.pop();

@@ -1,9 +1,11 @@
 "use strict";
-cc._RFpush(module, 'e3e188plWBMXYcOi4WopHmG', 'tomap');
-// js\tomap.js
+cc._RF.push(module, 'e3e188plWBMXYcOi4WopHmG', 'tomap');
+// js/tomap.js
+
+"use strict";
 
 cc.Class({
-    "extends": cc.Component,
+    extends: cc.Component,
 
     properties: {
         // foo: {
@@ -29,4 +31,4 @@ cc.Class({
     // },
 });
 
-cc._RFpop();
+cc._RF.pop();

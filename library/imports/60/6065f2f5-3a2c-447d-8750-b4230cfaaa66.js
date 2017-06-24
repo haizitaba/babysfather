@@ -1,5 +1,11 @@
+"use strict";
+cc._RF.push(module, '6065fL1OixEfYdQtCMM+qpm', 'goul');
+// js/goul.js
+
+"use strict";
+
 cc.Class({
-    "extends": cc.Component,
+    extends: cc.Component,
 
     properties: {
         // foo: {
@@ -24,3 +30,5 @@ cc.Class({
 
     // },
 });
+
+cc._RF.pop();
