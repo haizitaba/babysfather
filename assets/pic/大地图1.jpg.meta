@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "6f9594fb-ab47-4574-a720-91829f702a07",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "大地图1": {
+      "ver": "1.0.3",
+      "uuid": "fcd1579b-277d-4b14-9539-8224626829aa",
+      "rawTextureUuid": "6f9594fb-ab47-4574-a720-91829f702a07",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 640,
+      "height": 700,
+      "rawWidth": 640,
+      "rawHeight": 700,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

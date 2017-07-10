@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "UI界面-中条（700640）",
+    "texture": "0c191a4e-8770-4665-a826-6248bf2d2063",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      640,
+      699
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      640,
+      699
+    ]
+  }
+}
