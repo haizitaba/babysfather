@@ -16,17 +16,16 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-         var label1 = this.node.getChildByName("labelabc").getComponent(cc.Label);
-            var text = 'started';
-            console.log(label1);
+         var label1 = cc.find("Canvas/BtGongsi1/Label1").getComponent(cc.Label);
+         var label2 = cc.find("Canvas/BtGongsi2/Label2").getComponent(cc.Label);
+         var label3 = cc.find("Canvas/BtGongsi3/Label3").getComponent(cc.Label);
+            
+            
             // Change the text in Label Component
-            label1.string = text;
-        for(var j=0;j<3;j++) 
-        {
-            var l = 'cc.label'+j+1
-           
-        //  console.log(Global.jobselect[j]);
-        }
+            label1.string = Global.jobselect[0];
+            label2.string = Global.jobselect[1];
+            label3.string = Global.jobselect[2];
+       
 
     },
 

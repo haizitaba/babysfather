@@ -2,7 +2,7 @@
 cc._RF.push(module, 'c127cw84/9Np4BflqUBwIaS', 'workLoad');
 // js/workLoad.js
 
-'use strict';
+"use strict";
 
 cc.Class({
     extends: cc.Component,
@@ -22,16 +22,14 @@ cc.Class({
 
     // use this for initialization
     onLoad: function onLoad() {
-        var label1 = this.node.getChildByName("labelabc").getComponent(cc.Label);
-        var text = 'started';
-        console.log(label1);
-        // Change the text in Label Component
-        label1.string = text;
-        for (var j = 0; j < 3; j++) {
-            var l = 'cc.label' + j + 1;
+        var label1 = cc.find("Canvas/BtGongsi1/Label1").getComponent(cc.Label);
+        var label2 = cc.find("Canvas/BtGongsi2/Label2").getComponent(cc.Label);
+        var label3 = cc.find("Canvas/BtGongsi3/Label3").getComponent(cc.Label);
 
-            //  console.log(Global.jobselect[j]);
-        }
+        // Change the text in Label Component
+        label1.string = Global.jobselect[0];
+        label2.string = Global.jobselect[1];
+        label3.string = Global.jobselect[2];
     }
 
 });
